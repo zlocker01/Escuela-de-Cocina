@@ -1,0 +1,261 @@
+:root {
+    --primario: #f46669;
+    --secundario: #c7c57d;
+    --gris : #f5f5f5;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: 303030;
+}
+
+p {
+    font-weight: 300;
+    line-height: 2rem;
+    font-size: 1rem;
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-link:hover {
+    color: var(--primario);
+    border-bottom: 1px solid #f46669;
+}
+
+.nav-link {
+    border-bottom:  .125rem;
+}
+
+.copyright {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/* imagenes de fondo */
+
+.imagen-destacada,
+.contacto-bg {
+    color: #f46669;
+    border-bottom: .125rem solid #f46669;
+    background-image: url(../img/principal1.jpg);
+    min-height: 25rem;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.bg-light {
+    background-color: white !important;
+}
+
+.separador::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 6.25rem;
+    margin: 0 auto;
+    background-image: url(../img/separador.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.conteindo-nosotos {
+    margin-top: -5rem;
+    border: .0625rem solid #e1e1e1;
+    position: relative;
+    z-index: 100;
+}
+
+.nosotros .informacion h3 {
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+
+.footer {
+    border-bottom: .625rem solid var(--primario);
+}
+
+
+/* blog */
+
+.separador__inverso::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 6.25rem;
+    margin: 0 auto;
+    background-image: url(../img/separador-inverso.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn-primary {
+    background-color: #f46669;
+    border-color: #f46669;
+}
+
+.btn-primary:hover {
+    background-color: #e65456;
+    border-color: #e65456;
+}
+
+.text-light {
+    color: white !important;
+}
+
+blockquote.subtitulo {  /* la etiqueta y la clase sin espacios */
+    font-size: 1.6rem;
+    color: #303030;
+    font-style: italic;
+    font-weight: 100;
+    border-left: .2rem solid #f46669;
+}
+
+.entrada a, span{ /* clase primero etiquetas separada y con coma ente ellas */
+    color: #f46669;
+}
+
+.contenido-entrada .meta p{
+    font-weight: 700;
+}
+
+/* sidebar */
+
+.bg-primary {
+    background-color: #f46669 !important;
+}
+
+aside a,
+aside a:hover {
+    color: #f5f5f5;
+}
+
+aside .card-title {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+aside .card-subtitle {
+    color: #f46669;
+    font-weight: 400;
+}
+
+aside .card-footer {
+    background-color: #c7c57d;
+}
+
+aside .card-footer a {
+    color: black;
+}
+
+/* clases */
+
+.card {
+    margin-bottom: 2rem;
+}
+
+.badge-secondary {
+    background-color: #c7c57d;
+    color: black;
+}
+
+.card-subtitle {
+    color: #f46669;
+    font-weight: 400;
+}
+
+.card-title {
+    font-weight: 500;
+}
+
+/* clase */
+
+.clase-bg {
+    background-image: url(../img/1.jpg);
+}
+
+.list-group-item-primary {
+    background-color: #f46669;
+}
+
+.bg-secondary,
+.list-group-item-secondary {
+    background-color: #c7c57d !important;
+}
+
+.instructor {
+    font-size: 1.8rem;
+    color: #f46669;
+    font-weight: 400;
+}
+
+
+/* contacto */
+
+.contacto-bg {
+    background-image: url(../img/principal2.jpg);
+}
+
+/* home-page */
+
+.imagen > div {  /* seleccioanndo el primer nivel que seria le primer div */
+    height: 30rem;
+}
+@media (min-width: 768px) {
+    .imagen > div {
+        height: 45rem;
+    } 
+}
+
+.bg-vino, .bg-comida {
+    background-image: url(../img/principal1.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+.bg-comida {
+    background-image: url(../img/principal2.jpg);
+}
+
+@media (min-width: 768px) {
+    .bg-comida {
+        order: -1;
+    }
+}
+
+.imagen-superior .contenido {
+    border-top: .0625rem solid white;
+    border-bottom: .0625rem solid white;
+}
+
+.imagen-inferior .contenido {
+    border-top: .0625rem solid black;
+    border-bottom: .0625rem solid black;
+}
+
+.imagenes-principales {
+    overflow-x: hidden;
+}
+
+.bg__diferente{
+    background-color: #f5f5f5;
+}
+
+.licenciatura {
+    background-image: url(../img/chef_bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.licenciatura .row {
+    height: 31.25rem;
+}
+
+.display-4 {
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
